@@ -1,5 +1,3 @@
-console.log('Test file from static dir')
-
 const weatherForm = document.querySelector('form')
 const searchTerm = document.querySelector('input')
 const errorP = document.querySelector("#error")
