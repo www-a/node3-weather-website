@@ -11,7 +11,7 @@ weatherForm.onsubmit = (e) =>{
     errorP.textContent = 'Loading....'
     messageP.textContent = ''
 
-    fetch('http://localhost:3000/weather?address='+location).then((response) =>{
+    fetch('/weather?address='+location).then((response) =>{
         response.json().then((data) =>{
             if(data.error){
                 errorP.textContent = data.error
